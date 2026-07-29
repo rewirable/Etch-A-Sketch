@@ -1,18 +1,29 @@
+let delay = false
+
 const foundation = document.querySelector(".foundation");
 const button = document.getElementById("reset");
 
-let delay = 0
 
-button.onclick = function(){
-    if(delay){
-        console.log("delay")
+if(!delay){
+    button.onclick = function(){
+        console.log(delay)
+        if(delay){
+            console.log("delay")
+        }
+        if(!delay){
+            console.log("a")
+            foundation.innerHTML = ``
+            divs();
+            delay = true;
+            setTimeout(() => {
+                console.log("works")
+                delay = false
+            },10000)     
+        }
     }
-    if(foundation){
-        foundation.innerHTML = ``
-        divs();     
-    }
+} else{
+    console.log("delayed")
 }
-
 function divs(){
     for(i = 0; i < 16; i++){
         for(j = 0; j < 16; j++){
