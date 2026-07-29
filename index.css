@@ -1,0 +1,18 @@
+.foundation{
+    display: grid;
+    width: 400px;
+    height: 400px;
+    grid-template-columns: repeat(16, 1fr);
+
+}
+
+
+.cell{
+    background-color: white;
+    transition:0s 180s
+}
+
+.cell:hover{
+    background-color: black;
+    transition:0s;
+}
