@@ -1,8 +1,10 @@
 .foundation{
     display: grid;
-    width: 400px;
-    height: 400px;
-    grid-template-columns: repeat(16, 1fr);
+    width: 800px;
+    height: 800px;
+    margin: 1px;
+    padding: 1px;
+    grid-template-columns: repeat(var(--columns), 1fr);
 
 }
 
@@ -13,7 +15,7 @@
 }
 
 .cell:hover{
-    background-color: black;
+    background-color: var(--color);
     
     transition:0s;
 }
