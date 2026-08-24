@@ -19,7 +19,7 @@ if(!delay){
             setTimeout(() => {
                 console.log("works")
                 delay = false
-            },10000)     
+            },10000)
         }
     }
 } else{
